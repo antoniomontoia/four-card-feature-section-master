@@ -1,0 +1,146 @@
+/* Colors */
+
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$verydarkblue: hsl(234, 12%, 34%);
+$grayishblue: hsl(229, 6%, 66%);
+$verylightgray: hsl(0, 0%, 98%);
+
+/* Fonts and Font-sizes */
+$poppins: 'Poppins', sans-serif; 
+$paragraph: 15px;
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+html, body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10vw 0 10vw 0;
+}
+
+h1, h2, h3, h4, p {
+  font-family: $poppins;
+}
+
+h1, h2, h4 {
+  color: $verydarkblue;
+}
+
+h3, p {
+  color: $grayishblue;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 8vw 0 8vw;
+
+  .feature__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+    h1 {
+      font-weight: 200;
+    }
+    
+    h2 {
+      padding-bottom: 1.25rem;
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+
+  .feature__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .feature__cards__1 {
+      border-top: 4px solid $cyan;
+    }
+
+    .feature__cards__2 {
+      border-top: 4px solid $red;
+    }
+
+    .feature__cards__3 {
+      border-top: 4px solid $orange;
+    }
+
+    .feature__cards__4 {
+      border-top: 4px solid $blue;
+
+    }
+
+    .feature__cards__1, .feature__cards__2, .feature__cards__3, .feature__cards__4 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px;
+      padding-left: 28px;
+      padding-right: 28px;
+      box-shadow: 0px 6px 13px 0px hsl(0 0% 92% / 1);;
+      border-radius: 0.325rem;
+      
+      h4 {
+        font-size: 1.25rem;
+        padding-bottom: 0.5rem;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 0.825rem;
+        padding-bottom: 2rem;
+        line-height: 1.5;
+      }
+
+      img {
+        align-self: flex-end;
+        width: 56px;
+        height: auto;
+      }
+
+    }
+
+  }
+
+
+}
+
