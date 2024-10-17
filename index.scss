@@ -46,7 +46,6 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10vw 0 10vw 0;
 }
 
 h1, h2, h3, h4, p {
@@ -65,11 +64,14 @@ h3, p {
   color: $grayishblue;
 }
 
+.wrapper {
+  margin: 15vw 8vw;
+}
+
 .feature {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  margin: 0 8vw 0 8vw;
+  gap: 4rem;
 
   .feature__description {
   display: flex;
